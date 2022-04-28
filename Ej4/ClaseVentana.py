@@ -27,17 +27,17 @@ class Ventana:
             self.__xinfder+=desplazamiento
             self.__xsupizq+=desplazamiento
         else:
-            print('Desplazamiento en x no cumple con las condiciones')
+            print('Desplazamiento no cumple con las condiciones')
     def moverIzquierda(self,desplazamiento=1):
-        if self.__ysupizq-desplazamiento>=0 and self.__yinfder-desplazamiento>self.__ysupizq:
-            self.__yinfder-=desplazamiento
-            self.__ysupizq-=desplazamiento
+        if self.__xsupizq-desplazamiento>=0 and self.__xinfder-desplazamiento>self.__xsupizq:
+            self.__xinfder-=desplazamiento
+            self.__xsupizq-=desplazamiento
         else:
-            print('Desplazamiento en y no cumple con las condiciones')
+            print('Desplazamiento no cumple con las condiciones')
     def bajar(self,desplazamiento=1):
-        if desplazamiento+self.__xinfder <=500 and desplazamiento+self.__xsupizq < self.__xinfder:
-            self.__xinfder+=desplazamiento
-            self.__xsupizq+=desplazamiento
+        if desplazamiento+self.__yinfder <=500 and desplazamiento+self.__ysupizq < self.__yinfder:
+            self.__yinfder+=desplazamiento
+            self.__ysupizq+=desplazamiento
     def subir(self,desplazamiento=1):
         if self.__ysupizq-desplazamiento>=0 and self.__yinfder-desplazamiento>self.__ysupizq:
             self.__yinfder-=desplazamiento
